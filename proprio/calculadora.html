@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            padding: 30px;
+        }
+        div#resultado {
+            width: 308px;
+            padding: 10px 0px ;
+            background-color: black;
+            color: chartreuse;
+            text-align: end;
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="resultado">
+        <p>Resultado</p>
+    </div>
+    <div>
+        <button id="num1">1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+    <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+    </div>
+    <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+    </div>
+    <script>
+        var n1 = document.getElementById('num1')
+        n1.addEventListener('mousedown', segurar)
+        n1.addEventListener('mouseup', soltar)
+        function segurar(){
+            n1.style.background = 'darkgrey'
+            n1.style.border = 'none'
+        }
+        function soltar(){
+            n1.style.background = 'lightgray'
+            n1.style.border = '1px solid grey'
+        }
+        if(clicar){
+            documnet.getElementById('num1').innerText = '1'
+        }
+    </script>
+</body>
+</html>
