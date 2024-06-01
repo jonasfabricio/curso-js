@@ -34,6 +34,10 @@ select {
     margin-top: 10px;
 }
 
+#res {
+    text-align: justify;
+}
+
 footer {
     color: white;
     font-size: 15pt
